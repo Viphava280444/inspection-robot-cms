@@ -1,0 +1,89 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#root {
+  height: 100%;
+}
+
+.navbar-custom {
+  background: linear-gradient(90deg, rgba(0, 85, 164, 1) 0%, rgba(0, 212, 255, 1) 100%);
+  color: white;
+  border-bottom: 2px solid #0055a4;
+}
+
+.navbar-custom .navbar-brand {
+  color: white;
+  font-size: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  height: 56px;
+}
+
+.full-height-container {
+  height: calc(100vh - 56px);
+}
+
+.full-height-row {
+  height: 50%;
+}
+
+.full-height-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stream-card,
+.control-card {
+  width: 100%;
+  height: 100%;
+  background-color: #1c1c1c;
+  color: #e0e0e0;
+  border: 1px solid #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stream-card:hover,
+.control-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.control-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.form-control-lg {
+  height: calc(1.5em + 1rem + 2px);
+  padding: 0.5rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  text-align: center;
+}
+
+.hsv-controls {
+  background: #1c1c1c;
+  padding: 20px;
+  border: 1px solid #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  display: grid;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
