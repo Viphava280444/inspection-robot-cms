@@ -1,0 +1,4 @@
+opencv-python-headless
+depthai
+flask
+flask-cors
